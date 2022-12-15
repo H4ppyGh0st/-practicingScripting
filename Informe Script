@@ -1,0 +1,48 @@
+by Daniel Celis 2041425-2711 & Alexandra Lerma 2042400-2711
+Lab1: Observando el Comportamiento de Linux Objetivos
+
+Inicamos creando el dos archivos, uno con extención c el cual será el que porte nuestro main y el otro una archivo con extencion h en donde crearemos las funciones necesarias para la creación de el programa
+
+Para la parte B del laboratorio incie creado las funciones: 
+
+
+-extractWord: diciendola de forma resumida, esta funcion se encargara de encontrar similitudes con una palabra la cual pasaremos como parametro dentro de el archivo que le asignemos el cual también será otro parametro, comparara que tanta similutud hay en cuanto a la longitud de la palabra y los caracteres que tiene, esto ayudará a encontrar la palabra que solicitamos. el parametro tipe se encargará de ponerle un contesto a lo que se busca y presition servira para que se maneje desde que punto se quiere imprimir (esto evitara caracteres no deseados o que quicieriamos ignorar como por ejemplo los espacios).
+
+
+- extractCpuType: la cual se encargaria de imprimir en consola el tipo de la cpu extraido de el archivo cpuinfo dentro de proc utilizando la función extractWord y la palabra clave "vendor_id"
+
+- extractCpuModel: la cual se encargaria de imprimir en consola extraida tambien de cpu info usando la funcion ExtractWord con la palabra clave "model name"
+
+- extractUpTimeSimple: se encargaria de imprimir la cantidad de tiempo transcurrido desde que se inició el sistema operativo usando la función system para ejecutar el comando "uptime -p" desde c.
+
+- extractKernelVersion: se encargara de imprimir la version de el kernel usando la función system para ejecutar el comando "uname -sr" desde c
+
+
+
+
+
+
+
+
+Para la parte C del laboratorio:
+
+- cree una condicional de identificación de parametros de argv la cual si se cumplia la condición (la cual es que el usuario pase como parametro -s) mostraría las siguientes funciones que pide el enunciado
+
+- extractChangeContext: función que se encargará de imprimir en consola los cambios de contexto (se obtendran de el archivo stat dentro de proc)usando la funcion extractWord
+
+- extractProcess: función que se encargará de imprimir en consola el número de procesos creados desde el inicio del sistema (se obtendran de el archivo stat dentro de proc), usando la función extractWord
+
+
+- printFormat: Esta función recibira int como para parametro y hacia hacer las respectivas conversiones de microsegundos a dias, horas, minutos y segundos.
+
+
+
+- readUserStat: esta función sirve para obtener los datos sobre la cantidad de tiempo de CPU utilizado para usuarios, sistema y proceso idle (se obtendran de el archivo stat dentro de proc), seguido de esto usaremos la función printFormat para hacer la respectiva conversión e imprimirlo en consola
+
+
+- extractTimeBooted: esta función extraerá el tiempo cuando el sistema fue iniciado (se obtendran de el archivo stat dentro de proc). seguido de esto también usaremos la función printFormat para hacer la respectiva conversión, imprimira en el formato convertido y el original.  
+
+
+
+
+
